@@ -1,0 +1,53 @@
+body{
+  background-color: white;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+.nav-header{
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(165, 206, 242);
+}
+.nav-logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nav-menu{
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+}
+.nav-menu a,.nav-logo a{
+text-decoration: none;
+color: white;
+padding: 50px 10px;
+font-size: 20px;
+}
+
+
+/* =======================
+Navigation Media quary
+======================= */
+@media screen and (max-width:666px) {
+  .menu-item{
+    display: none;
+  }
+  .nav-container{
+    flex-direction: row-reverse;
+  }
+  
+}
+@media screen and (min-width:666px) {
+  .menu-bar{
+    display: none;
+  }
+  
+  
+}
