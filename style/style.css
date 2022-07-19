@@ -1,6 +1,7 @@
 body{
   background-color: white;
   display: flex;
+  flex-direction: column;
   /* justify-content: center;
   align-items: center; */
 }
@@ -30,6 +31,54 @@ color: white;
 padding: 50px 10px;
 font-size: 20px;
 }
+/* ============================
+Influencer  part css here...
+============================ */
+.influencer-part{
+  width: 100%;
+  margin: 0 auto;
+}
+.influence-container{
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+.influencer-info{
+  display: flex;
+  text-align: left;
+  width: 100%;
+  padding: 5px 50px;
+  justify-content: center;
+  flex-direction: column;
+}
+.influencer-button{
+  width: 20%;
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  background-color: purple;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.influencer-button i{
+  padding-left: 5px;
+}
+.influencer-image{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Circle\ design.svg);
+  background-repeat: no-repeat;
+
+}
+.influencer-image image{
+  width: 50%;
+  align-items: center;
+}
+
 
 
 /* =======================
@@ -42,12 +91,17 @@ Navigation Media quary
   .nav-container{
     flex-direction: row-reverse;
   }
-  
-}
-@media screen and (min-width:666px) {
-  .menu-bar{
-    display: none;
+  .influence-container{
+    display: flex;
+    flex-direction: column-reverse;
   }
   
   
 }
+/* @media screen and (min-width:666px) {
+  .menu-bar{
+    display: none;
+  } 
+  
+  
+}*/
